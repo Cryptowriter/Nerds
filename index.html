@@ -13,8 +13,8 @@
             <ul class="site-navigation">
                 <li><a href="">Студия</a></li>
                 <li><a href="">Клиенты</a></li>
-                <li><a href=""></a>Магазин</li>
-                <li><a href=""></a>Контакты</li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="">Контакты</a></li>
             </ul>
             
             <ul class="cart">
@@ -38,7 +38,7 @@
                Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
                <a href="#" class="button slider-button">Узнать больше</a>
            </p>
-            <input type="radio" class="slider-form" name="slide" value="slide-1">
+            <input type="radio" class="slider-form" name="slide" value="slide-1" checked>
             <input type="radio" class="slider-form" name="slide" value="slide-2">
             <input type="radio" class="slider-form" name="slide" value="slide-3">
         </section>
@@ -97,14 +97,60 @@
             </table>
         </section>
         
-        <sections class="clients">
+        <section class="clients">
             <ul class="clients-list">
                 <li><a href="#"><img src="img/htmlacademy.jpg" alt="HTML-Academy"></a></li>
                 <li><a href="#"><img src="img/bsborodinski.jpg" alt="BarberShop Borodinski"></a></li>
                 <li><a href="#"><img src="img/pink.jpg" alt="Pink"></a></li>
                 <li><a href="#"><img src="img/mishka.jpg" alt="Mishka"></a></li>
             </ul>
-        </sections>
+        </section>
+        
+        <section class="contacts">
+            <img src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
+            <div class="contacts-info">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p>
+                    191186, Санкт-Петербург, <br> 
+                    ул. Б. Конюшенная, д. 19/8 <br><br>
+                    тел. +7 (812) 275-75-75
+                </p>
+                <a href="contact-form.html" class="button">Напишите нам</a>
+            </div>
+        </section>
+        
+        <section class="modal contact">
+            <h2>Напишите нам</h2>
+            <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="contact-form-item">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="contact-form-item">
+                <label for="mail">Ваш e-mail:</label>
+                <input type="email" id="mail" name="mail" value="" placeholder="email@example.com">
+            </p>
+            <p class="contact-form-item">
+                <label for="letter">Текст письма:</label>
+                <textarea name="letter" id="letter" cols="30" rows="4" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
     </main>
+    
+    <footer class="main-footer">
+                <ul class="main-footer-socials">
+                   <li><a href="#" class="social-button">Вконтакте</a></li>
+                   <li><a href="#" class="social-button">Фейсбук</a></li>
+                   <li><a href="#" class="social-button">Инстаграм</a></li>
+               </ul>
+               
+               <dl>
+                   <dd>Давайте дружить, это выгодно!</dd>
+                   <dt>Скидка 10% для друзей из социальных сетей.</dt>
+               </dl>
+    </footer>
 </body>
 </html>
