@@ -28,13 +28,13 @@
        <form class="filter" action="https://echo.htmlacademy.ru" method="get" action="https://echo.htmlacademy.ru">
            <fieldset>
               <legend>Стоимость:</legend>
-               <input class="filter-cost" type="range">
+               <input class="visually-hidden filter-input filter-input-range" class="filter-cost" type="range">
                <br>
                <label>от
-               <input class="filter-cost" type="text" value="0" >
+               <input class="visually-hidden filter-input filter-input-range" class="filter-cost" type="text" value="0" >
                </label>
                <label> <span>до</span>
-               <input class="filter-cost" type="text" value="15 000">
+               <input class="visually-hidden filter-input filter-input-range" class="filter-cost" type="text" value="15 000">
                </label>
            </fieldset>
 
@@ -43,19 +43,19 @@
                <ul>
                  <li class="filter-grid">
                    <label>
-                   <input type="radio" name="grid-filter" value="adaptive" checked>
+                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-filter" value="adaptive" checked>
                    Адаптивная
                    </label>
                  </li>
                  <li class="filter-grid">
                    <label>
-                   <input type="radio" name="grid-filter" value="fixed">
+                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-filter" value="fixed">
                    Фиксированая
                    </label>
                  </li>
                  <li class="filter-grid">
                    <label>
-                   <input type="radio" name="grid-filter" value="rubber">
+                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-filter" value="rubber">
                    Резиновая
                    </label>
                  </li>
@@ -67,37 +67,37 @@
                <ul>
                  <li class="filter-features">
                    <label>
-                   <input type="checkbox" name="slider" value="slider" checked>
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" value="slider" checked>
                    Слайдер
                    </label>
                  </li>
                  <li class="filter-features">
                    <label>
-                   <input type="checkbox" name="features-block" value="features-block">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-block" value="features-block">
                    Блок преимуществ
                    </label>
                  </li>
                  <li class="filter-features">
                    <label>
-                   <input type="checkbox" name="feed" value="feed" checked>
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feed" value="feed" checked>
                    Новости
                    </label>
                  </li>
                  <li class="filter-features">
                    <label>
-                   <input type="checkbox" name="gallery" value="gallery">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" value="gallery">
                    Галерея
                    </label>
                  </li>
                  <li class="filter-features">
                    <label>
-                   <input type="checkbox" name="cart" value="cart">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" value="cart">
                    Корзина
                    </label>
                  </li>
                </ul>
            </fieldset>
-           <input type="submit" value="Показать">
+           <button type="submit" class="filter-button button">Показать</button>
        </form>
 
     </aside>
